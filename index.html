@@ -1,0 +1,195 @@
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" href="main.css" />
+<title>Chess</title>
+<style >
+	body{
+		background-color:#DCC9C4;
+	}
+
+h1{
+color:#AD85AE;
+font-size:50px;	
+text-align: center
+
+
+}
+
+
+
+h2{
+color:#AD85AE;
+font-size:50px;
+text-align: center	
+}
+
+
+h5{
+color:#AD85AE;
+font-size:50px;
+text-align: center	
+}
+
+
+
+</style>
+<script>
+function banner(){
+var text = confirm("Did You Really Want to Click on My Banner?");
+return text;
+}
+
+function answer(){
+	var radio = document.getElementsByName("trivia");
+var selection = false;
+var message = "";
+
+
+for( var i = 0; i < radio.length; i++) {
+if(radio[i].value == "yes" && radio[i].checked == true) {
+selection = true;
+} //end if statement
+} //end for loop
+if(selection == true) {
+message = message + "<b><p style='color:green'>Way to go!</p></b>";
+} else {
+message = message + "<b><p style='color:red'>Try again my friend.</p></b>";
+}
+document.getElementById("response").innerHTML = message;
+} //end function answer
+
+
+function answer2(){
+	var radio = document.getElementsByName("trivia2");
+var selection = false;
+var message = "";
+
+
+for( var i = 0; i < radio.length; i++) {
+if(radio[i].value == "yes" && radio[i].checked == true) {
+selection = true;
+} //end if statement
+} //end for loop
+if(selection == true) {
+message = message + "<b><p style='color:green'>Way to go!</p></b>";
+} else {
+message = message + "<b><p style='color:red'>Try again my friend.</p></b>";
+}
+document.getElementById("response2").innerHTML = message;
+}
+function answer3(){
+	var radio = document.getElementsByName("trivia3");
+var selection = false;
+var message = "";
+
+
+for( var i = 0; i < radio.length; i++) {
+if(radio[i].value == "yes" && radio[i].checked == true) {
+selection = true;
+} //end if statement
+} //end for loop
+if(selection == true) {
+message = message + "<b><p style='color:green'>Way to go!</p></b>";
+} else {
+message = message + "<b><p style='color:red'>Try again my friend.</p></b>";
+}
+document.getElementById("response3").innerHTML = message;
+} //end function answer
+
+</script>
+</head>
+<body>
+	<header id="banner"></header>
+<h1>CHESS</h1>
+
+<h2>Chess History/Information</h2>
+
+<center><p class="paragraph">		Chess is one of the many brain games to help people improve in concentration and critical thinking</p>
+<ol>
+
+<div class="wrap-list">
+
+<ul>
+
+<li> Chess originated in India played by the royals and quickly spread to other countries</li>
+<li> Chess is based on real war and how to thing out of the box to win and trap and kill the king </li>
+<li> Chess is now very popular and played all arounnd the world to win the title of The World Chess Champion. </li>
+<li>Each of the players (black and white) both have a total of 16 pieces with a result of there being 32 pieces in all.</li>
+<li>There is a total of 64 sqaure on a regular chess board.</li>
+
+
+</ul>
+</div>
+<h1>Watch this video to learn more about chess's history!</h1>
+<iframe width="45%" height="315" src="https://www.youtube.com/embed/YeB-1F-UKO0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<hr/>
+
+
+<h2>Chess Trivia</h2>
+
+<p >Who won the title of The World Chess Champion in 1972?</p>
+<div class="wrap-trivia1">
+  	<form>
+  		<div id="response2"></div>
+      <input type="radio" name="trivia2"value="no"> Boris Spassky  
+      <input type="radio" name="trivia2" value="yes">Bobby Fischer  
+      <input type="radio" name="trivia2"value="no"> Garry Kasparov <br/>
+      <input onclick="answer2()"type="button"value="submit">
+    </form>
+</div>
+<p >If you are white and for your first move you play e4 and then your opponent plays c6 what is that opening called?</p>
+<div class="wrap-trivia2">
+  	<form>
+  		<div id="response"></div>
+      <input type="radio" name="trivia" value="no"> Alekhine's defence 
+      <input type="radio" name="trivia"value="no"> Sicilian defence 
+      <input type="radio" name="trivia"value="yes"> Caro-Kann <br/>
+      <input onclick="answer()" type="button" value="submit">
+    </form>
+</div>
+<p >What is the beautiful game played by Paul morphy and Duke Karl called?</p>
+<div class="wrap-trivia3">
+  	<form>
+  		<div id="response3"></div>
+      <input type="radio" name="trivia3"value="yes"> A Night At The Opera
+      <input type="radio" name="trivia3"value="no"> A Night At The Concert
+      <input type="radio" name="trivia3"value="no"> A Night Of Music <br/>
+      <input onclick="answer3()" type="button" value="submit">
+    </form>
+</div>
+
+</center>
+<s></s><img width="22.5%" height="315"src="https://media0.giphy.com/media/3o85xvnSxCKJZaSYmI/giphy.webp?cid=ecf05e47b235c999003fda7efc0d36a6c832114c962cbf4d&rid=giphy.webp" />
+
+<s></s><img width="22.5%" height="315"src="https://media1.giphy.com/media/3oKIP74Z5SlJHLxWAo/200.webp?cid=ecf05e47750ecb408f80149d651c7aa2ac100d992b8c0e5a&rid=200.webp" />
+
+<s></s><img width="22.5%" height="315"src="https://media0.giphy.com/media/OJnrDJHKnZjQk/200.webp?cid=ecf05e47c74d07bb87320b88be7a856a1b1913a7b183d10a&rid=200.webpp" />
+
+<s></s><img width="22.5%" height="315"src="https://media0.giphy.com/media/RJtdD0BtR9aOVMaxOl/200w.webp?cid=ecf05e47070ce1ab1147468d0fc81a4b09a43b914c66a0f1&rid=200w.webp" />
+
+
+
+<hr/>
+<h2>How To Play Chess</h2>
+<center><p class="paragraph">		To play Chess you first need to learn what the pieces are, how to use them and where to put them.</p>
+<center><p class="paragraph">	The chess pieces are: The pawn, bishop, knight, rook, queen & king</p>
+<div class="wrap-list">
+
+<p> The Pawn: There are a total of 16 pawns on the board all set up next to each other on the 2nd and 7nd ranks. Pawns can only move one square forward except on there first move when they can move two squares forward. Pawns can only capture things diagonally except when an en passent is available(You will learn about that later).</p>
+<p> The Bishop: There is a total of 4 bishops on the board all on the 3rd square of each end on the 1st and 8th ranks. Bishops move and capture diagonally.</p>
+<p> The Knight: There are a total of 4 knight on the board all on the 2nd square of each end on the 1st and 8th ranks. Knights move and capture in L shapes.</p>
+<p> The Rook: There are a total of 4 rooks on the board all on the 1st square of each end on the 1st and 8th ranks. Rooks move and capture horizontally and vertically.</p>
+<p> The Queen: There are a total of 2 queens on the board all on the square next to the bishop that is next to the color of the queen. Queens move and capture diagonally, horizontally and vertically.</p>
+<p> The King: There are a total of two kings on the board all next to the queen and the bishop. Kings can move and capture any direction one square except when it castles(You will learn about that later). WARNING If the king is trapped and cannot move or go anywhere and you can not capture the piece attacking the king, YOU LOSE THE GAME!</p>
+<s></s><img width="55%" height="200"src="https://previews.123rf.com/images/juliarstudio/juliarstudio1509/juliarstudio150900032/46167102-chess-pieces-silhouette-set-black-silhouettes-with-reflection-and-name-on-white-background.jpg" />
+
+</div>
+<h5>Now that you know the basics watch these videos to learn more in depth!</h5>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mGuYHXfgDxY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NAIQyoPcjNM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h5>We have to put your skills to the test now! Click the link below to start playing other people!</h5>
+
+<center><a href="http://lichess.org"><h1>My Favorite Chess Website</h1></a></center>
+
+</body>
+</html>
